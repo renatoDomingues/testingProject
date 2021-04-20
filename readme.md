@@ -34,13 +34,9 @@
 * "test": "node_modules\\.bin\\mocha --reporter spec **/*.test.js"
 
 ### To run the tests terminal
-* "test": node_modules\.bin\mocha --reporter spec **/*.test.js
+* "test": "node_modules\\.bin\\mocha --reporter spec **/*.test.js"
 * npm test
 
 ### To run the tests terminal
-* "coverage": "node_modules\\.bin\\istanbul cover _mocha -- --reporter spec **/*.test.js"
+* "coverage": "node_modules\\.bin\\istanbul cover node_modules\\mocha\\bin\\_mocha -- --reporter spec **/*.test.js"
 * npm run coverage
-
-"test": "mocha --reporter spec **/*.test.js",
-"start": "node index.js",
-"coverage": "nyc mocha --reporter spec **/*.test.js"
